@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Medina Herb Society</title>
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo-container">
+            <!-- UPDATED: Logo path standardized across all pages -->
+            <img src="image_3ab501.png" alt="Medina Herb Society Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="about.html">About/History</a></li> 
+                    <li><a href="index.html#events">Events</a></li>
+                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <!-- Active link for the Contact page -->
+                    <li><a href="contact.html" class="active-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Connect With Us</h2>
+            <p style="text-align: center;">Ready to join our society, have a question about a specific herb, or want to learn about our next workshop? We'd love to hear from you!</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>✉️ Email Us</h3>
+                    <p>For general inquiries, membership, or program questions, please reach out to our dedicated email:</p>
+                    <p><a href="mailto:medinacountyherbsociety@aol.com">**medinacountyherbsociety@aol.com**</a></p>
+                </div>
+        
+                <div class="contact-item">
+                    <h3>📍 Meeting Location</h3>
+                    <p>We typically meet on the first [Day of the Month] at 7:00 PM at [Location Placeholder].</p>
+                    <p>Medina, Ohio 44256 (General Area)</p>
+                    <!-- Using the new small-note class -->
+                    <p class="small-note">*Please check the Events calendar for specific dates and locations.*</p>
+                </div>
+                
+                <div class="contact-item">
+                    <h3>📱 Follow Us</h3>
+                    <p>Stay up-to-date with photos, event reminders, and quick tips by following us on social media.</p>
+                    <p>
+                        <a href="[Your Facebook Link]" target="_blank">Facebook (MedinaHerbSociety)</a><br>
+                        <a href="[Your Instagram Link]" target="_blank">Instagram (@MedinaHerbs)</a>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Contact Form Section - Class applied here -->
+            <div class="contact-form-container">
+                <h3 style="text-align: center; margin-top: 0;">Send Us a Quick Message</h3>
+                
+                <!-- NEW: Status message container for feedback -->
+                <div id="form-status" class="hidden"></div>
+
+                <!-- UPDATED: Form now uses JavaScript for submission (no server needed!) -->
+                <form id="contactForm" onsubmit="handleContactFormSubmission(event)">
+                    <div style="margin-bottom: 15px;">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <!-- Using the cta-button class -->
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Medina Herb Society. Established 1976. Cultivating Tradition.</p>
+        <p style="font-size: 0.8em; margin: 0;">Website developed with AI assistance.</p>
+    </footer>
+
+    <!-- Link the external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
